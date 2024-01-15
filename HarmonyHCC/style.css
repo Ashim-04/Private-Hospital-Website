@@ -1,0 +1,678 @@
+/*------ Home Page ------*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.logo-and-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.navbar-logo {
+    height: 150px;
+}
+
+
+.navbar {
+    background-color: #0056b3;
+    color: white;
+    height: 100px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    margin-left: 80px;
+    flex-grow: 1;
+}
+
+
+.navbar h1 {
+    margin: 0;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    transition: color 0.5s ease, background-color 0.3s ease;
+}
+
+.navbar ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover:after{
+    width: 100%;
+}
+
+/*-----------------search box-------------------*/
+
+.searchbox {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.searchbox input[type="text"] {
+    padding: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 100px;
+    width: 350px;
+}
+
+.searchbox button {
+    padding: 5px;
+    border: none;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.searchbox button:hover {
+    background-color: #004494;
+    transition: 0.5s;
+}
+
+
+/*--------image slideshow in home page--------*/
+
+
+
+.slideshow-container {
+    width: 55%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+
+/*---------Welcome to HCC (HOME PAGE)---------*/
+
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-patientcare-col h1{
+    padding-top: 0;
+    padding-left: 10px;
+    text-align: center;
+}
+.home-patientcare-col p{
+    padding: 15px 0 25px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.hero-btn:hover{
+    border: 1px solid #00509d;
+    background: #00509d;
+    transition: 1s;
+}
+
+.blue-btn{
+    border: 1px solid #00509d;
+    background: transparent;
+    color: #00509d;
+
+}
+.blue-btn:hover{
+    color: #fff;
+}
+
+
+/*-------------Starting Latest News Section (HOME PAGE)-------------*/
+
+
+.latestnews{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.latestnews h1 {
+    color: #0056b3;
+}
+
+.latestnews-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.latestnews-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.latestnews-col p{
+    padding: 0;
+    padding-bottom: 40px;
+    text-align: left;
+    font-size: x-small;
+}
+.latestnews-col h4{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left; 
+}
+
+/*-----------End of latest New (HOME PAGE)---------------*/
+
+
+
+/*------------------------Staring of SALE (HOME PAGE)-------------------------*/
+
+.sale{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.082),rgba(0,0,0,0.082)), url(images/sale1.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.sale h2{
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    padding: 0;
+    text-align: left;
+    margin-left: 18px;
+}
+.sale p{
+    color: #fff;
+    text-align: left;
+    margin-left: 15px;
+    font-size: small;
+}
+
+/*--------------Ending of SALE (HOME PAGE)----------------------------*/
+
+
+/*--------------Starting of COMMENTS (HOME PAGE)----------------------------*/
+.comments{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    color: #00509d;
+}
+.comments-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #caf0f8;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.comments-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.comments-col p{
+    padding: 0;
+}
+.comments-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.comments-col .fa{
+    color: #f44336;
+}
+
+/*--------------Ending of COMMENTS (HOME PAGE)----------------------------*/
+
+
+
+
+/*--------------STARTING of OUR STORY SECTION (ABOUT US PAGE)----------------------------*/
+.about-ourstory-col h1{
+    padding-top: 0;
+    padding-left: 10px;
+}
+
+.about-ourstory-col p{
+    padding: 15px 0 25px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+.about-ourstory-col img{
+    padding-top: 0px;
+}
+/*--------------END of OUR STORY SECTION (ABOUT US PAGE)----------------------------*/
+
+
+/*--------------STARTING of OUR VISION and MISSION SECTION (ABOUT US PAGE)----------------------------*/
+
+.about-mission-col h1{
+    padding-top: 0;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.about-mission-col p{
+    padding: 15px 0 25px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 90px;
+}
+
+.about-mission-col img{
+
+    padding-right: 20px;
+}
+
+.about-vision-col h1{
+    padding-top: 0;
+    padding-left: 80px;
+    text-align: center;
+}
+
+.about-vision-col p{
+    padding: 15px 0 25px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 40px;
+}
+
+.about-vision-col img{
+
+    padding-left: 20px;
+}
+
+/*--------------END of OUR STORY SECTION (ABOUT US PAGE)----------------------------*/
+
+
+/*-------------- STARTING of BLOOD DONATION SECTION (SERVICES PAGE)---------------*/
+.blood{
+    margin: 100px auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(205,0,0,0), rgba(205,0,0,0.7)),url(images/blood.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+.blood h2{
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    padding: 0;
+    text-align: left;
+    margin-left: 18px;
+}
+.blood p{
+    color: #fff;
+    text-align: justify;
+    margin-left: 15px;
+    font-size: medium;
+    padding-right: 50%;
+}
+
+/*------------------END of BLOOD DONATION SECTION (SERVICES PAGE)--------------------*/
+
+
+
+/*------------------ STARTING of SCHEDULES (BOOKINGS PAGE)--------------------*/
+
+
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule th, .schedule td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+}
+
+
+.edit-btn{
+    margin-top: 40px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.edit-btn:hover{
+    border: 1px solid #00509d;
+    background: #00509d;
+    transition: 1s;
+}
+
+.blue-btn{
+    border: 1px solid #00509d;
+    background: transparent;
+    color: #00509d;
+
+}
+.blue-btn:hover{
+    color: #fff;
+}
+
+
+
+.specialization-selector {
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.specialization-selector select {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.specialization-selector select:hover {
+    background-color: #ADD8E6;
+    transition: 0.5s;
+}
+
+.specialization-selector:hover, .specialization-selector:focus {
+    border-color: #0056b3;
+    box-shadow: 0 2px 8px rgba(0, 56, 179, 0.2);
+}
+
+.specialization-selector button {
+    padding: 5px;
+    border: none;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 80px;
+}
+
+.specialization-selector button:hover {
+    background-color: #004494;
+    transition: 0.5s;
+}
+
+
+/*------------------ END of SCHEDULES (BOOKINGS PAGE)--------------------*/
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.page {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ourstory {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/*------------------ Starting of CONTACT US FORM (CONTACT US PAGE)--------------------*/
+
+
+.form {
+    margin-left: 20%;
+    background: #E1D9D1;
+    width: 60%;
+    height: 400px;
+    border-radius: 3px;
+}
+
+.form input {
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.3), -1px -1px 2px rgba(180, 180, 100, 0.3);
+    transform: translateY(25px);
+    display: block;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    height: 30px;
+    width: 80%;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.form h3 {
+    text-align: center;
+    color: #00509d;
+}
+
+
+.hero-btn, input[type="submit"].hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover, input[type="submit"].hero-btn:hover {
+    border: 1px solid #00509d;
+    background: #00509d;
+    transition: background-color 1s, border-color 1s, color 1s;
+}
+
+.blue-btn, input[type="submit"].blue-btn {
+    border: 1px solid #00509d;
+    background: transparent;
+    color: #00509d;
+}
+
+.blue-btn:hover, input[type="submit"].blue-btn:hover {
+    color: #fff;
+    background: #00509d;
+    border-color: #00509d;
+}
+
+input[type="submit"].hero-btn.blue-btn {
+    width: 150px;
+    height: 50px;
+    margin-left: 39%;
+}
+
+
+
+
+.form button {
+    margin-left: 37%;
+    margin-top: 10%;
+}
+
+.form h2 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+input:focus{
+    outline: none;
+}
+
+
+
+::placeholder {
+    position: relative;
+    left: 20px;
+    text-align: justify;
+}
+
+
+.contact-location-col h1{
+    padding-top: 0;
+    padding-left: 90px;
+    text-align: center;
+}
+.contact-location-col p{
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 90px;
+    
+    line-height: 50PX;
+}
+
+.fas.fa-map-marker-alt {
+    color: #00509d;      
+    font-size: 24px;  
+    padding-right: 5px;
+}
+
+.fas.fa-phone {
+    color: #00509d;      
+    font-size: 24px;  
+    padding-right: 5px;
+}
+
+.fas.fa-envelope {
+    color: #00509d;      
+    font-size: 24px;  
+    padding-right: 5px;
+}
+
+/*------------------ Ending of CONTACT US FORM (CONTACT US PAGE)--------------------*/
+
+
+
+h1 {
+    color: #0056b3;
+}
+
+h2 {
+    color: #0056b3;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+.footer p {
+    margin: 10px 0;
+}
+.social-icons {
+    font-size: 24px;
+}
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+}
